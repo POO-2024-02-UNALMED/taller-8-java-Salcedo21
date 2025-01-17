@@ -40,10 +40,9 @@ public class Jugador extends Futbolista {
 
     @Override
     public String toString() {
-        return "El Futbolista " + getNombre()+" tiene "+getEdad() +" y juega de "+getPosicion() +" con el dorsal " + dorsal +
+        return "El Futbolista " + getNombre()+" tiene "+getEdad() +", y juega de "+getPosicion() +" con el dorsal " + dorsal +
                 ". Ha marcado " + golesMarcados ;
     }
-
     @Override
     public int compareTo(Object o) {
         Futbolista o1 = (Futbolista) o;

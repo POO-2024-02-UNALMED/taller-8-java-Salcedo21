@@ -37,15 +37,16 @@ abstract public class Futbolista implements Comparable {
         return posicion;
     }
 
-
-    public boolean equals(Futbolista f){
-        return this.posicion.equals(f.posicion) || this.edad == f.edad || this.nombre.equals(f.nombre);
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {return true;}
+        return  false;
     }
 
     abstract public boolean jugarConLasManos();
 
     @Override
     public String toString() {
-        return "El futbolista "+ nombre+" tiene "+edad+" y juega de "+ posicion;
+        return "El futbolista "+ nombre+" tiene "+edad+", y juega de "+ posicion;
     }
 }
