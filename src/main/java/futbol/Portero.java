@@ -36,7 +36,7 @@ public class Portero extends Futbolista{
 
     @Override
     public String toString() {
-        return "El Futbolista " + getNombre()+" tiene "+getEdad() +" y juega de "+getPosicion() +" con el dorsal " + dorsal +
+        return "El futbolista " + getNombre()+" tiene "+getEdad() +", y juega de "+getPosicion() +" con el dorsal " + dorsal +
                 ". Le han marcado " + golesRecibidos ;
     }
     @Override
